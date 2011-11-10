@@ -1,0 +1,92 @@
+// Place all the styles related to the NiftyNotes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body, h1, h2, h3, h4, h5, h6, input {
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: darkred;
+}
+.note-content, .search-row { clear: both; }
+.first-row, .second-row { overflow: hidden; }
+.sandbox {
+  border: 2px solid black;
+  width: 1024px;
+  height: 768px;
+}
+.search-row input {
+  font-size: 20px;
+  padding: 4px;
+  border: 2px solid gray;
+  background-color: white;
+}
+h1.app-title {
+  border: 2px solid gray;
+  border-top: none;
+  display: inline-block;
+  margin-left: 150px;
+  padding: 8px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.note-preview {
+  width: 240px;
+  height: 180px;
+  overflow: hidden;
+  float: left;
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  padding: 4px;
+  position: relative;
+}
+.note-preview h2 {
+  float: left;
+}
+.note-open {
+  float: right;
+}
+.note-text-eater {
+  height: 30px;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background: url(/assets/text-eater.png) repeat-x;
+}
+.search-row {
+  border: 2px solid gray;
+  border-left: none;
+  border-right: none;
+  padding: 16px 0 16px 0;
+  margin-top: 30px;
+  background-color: lightgray;
+}
+input.search-button {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 10px;
+}
+input.search-query {
+  margin-left: 100px;
+  width: 460px;
+}
+.pagination {
+  margin-top: 65px;
+  font-size: 20px;
+}
+.pagination a {
+  border: 2px solid gray;
+  border-radius: 30px;
+  padding: 10px;
+  overflow: hidden;
+  background: lightgray;
+}
+.pagination .go-back {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-left: none;
+  padding-right: 16px;
+  width: auto;
+}
