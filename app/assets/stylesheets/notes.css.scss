@@ -21,14 +21,25 @@ a {
   border: 2px solid gray;
   background-color: white;
 }
-h1.app-title {
+.app-title, .action-new {
   border: 2px solid gray;
   border-top: none;
   display: inline-block;
-  margin-left: 150px;
   padding: 8px;
-  border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+.app-title {
+  border-bottom-left-radius: 10px;
+  margin-left: 150px;
+}
+.action-new {
+  border-left: none;
+  padding-left: 45px;
+  padding-right: 15px;
+  background: url(star.png) 10px 10px no-repeat;
+  position: absolute;
+  top: 2px;
+  left: 2px;
 }
 .note-preview {
   width: 240px;

@@ -1,6 +1,6 @@
 NiftyNotes::Application.routes.draw do
-  root :to => "nifty_notes#index"
-  get "nifty_notes/index"
+  root :to => "notes#index"
+  resources :notes
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

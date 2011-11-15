@@ -23,26 +23,24 @@ Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is ad
 
 end slipsum code -->
 
-<div class="sandbox">
-  <h1 class="app-title">Nifty Notes</h1>
-  <div class="first-row">
-    <% 3.times do %>
-      <%= render 'note_preview' %>
-    <% end %>
-  </div>
-  <div class="search-row">
-    <input type="text" class="search-query" placeholder="What do you want to find?" />
-    <input type="submit" class="search-button" value="Find it!" />
-  </div>
-  <div class="second-row">
-    <% 3.times do %>
-      <%= render 'note_preview' %>
-    <% end %>
-  </div>
-  <div class="pagination">
-    <a class="go-back" href="#">Go back</a>
-    <% 3.times do %>
-      <a class="page" href="#">123</a>
-    <% end %>
-  </div>
+<h2 class="action-new"><%= link_to 'New!', new_note_path %></h2>
+<div class="first-row">
+  <% 3.times do %>
+    <%= render 'note_preview' %>
+  <% end %>
+</div>
+<div class="search-row">
+  <input type="text" class="search-query" placeholder="What do you want to find?" />
+  <input type="submit" class="search-button" value="Find it!" />
+</div>
+<div class="second-row">
+  <% 3.times do %>
+    <%= render 'note_preview' %>
+  <% end %>
+</div>
+<div class="pagination">
+  <a class="go-back" href="#">Go back</a>
+  <% 3.times do %>
+    <a class="page" href="#">123</a>
+  <% end %>
 </div>
