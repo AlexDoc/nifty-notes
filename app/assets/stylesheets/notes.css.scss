@@ -5,6 +5,9 @@ body, h1, h2, h3, h4, h5, h6, input {
   padding: 0;
   margin: 0;
 }
+.search-row input, .app-title, .action-new, .search-row, .pagination a, label, input, textarea {
+  border: 2px solid gray;
+}
 a {
   color: darkred;
 }
@@ -14,15 +17,13 @@ a {
   border: 2px solid black;
   width: 1024px;
   height: 768px;
+  position: relative;
 }
 .search-row input {
   font-size: 20px;
   padding: 4px;
-  border: 2px solid gray;
-  background-color: white;
 }
 .app-title, .action-new {
-  border: 2px solid gray;
   border-top: none;
   display: inline-block;
   padding: 8px;
@@ -34,12 +35,10 @@ a {
 }
 .action-new {
   border-left: none;
-  padding-left: 45px;
   padding-right: 15px;
-  background: url(star.png) 10px 10px no-repeat;
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 0px;
+  left: 0px;
 }
 .note-preview {
   width: 240px;
@@ -67,7 +66,6 @@ a {
   background: url(/assets/text-eater.png) repeat-x;
 }
 .search-row {
-  border: 2px solid gray;
   border-left: none;
   border-right: none;
   padding: 16px 0 16px 0;
@@ -75,8 +73,9 @@ a {
   background-color: lightgray;
 }
 input.search-button {
-  padding-left: 16px;
+  padding-left: 45px;
   padding-right: 16px;
+  background: white url(magnifier.png) 10px 5px no-repeat;
   margin-left: 10px;
 }
 input.search-query {
@@ -88,7 +87,6 @@ input.search-query {
   font-size: 20px;
 }
 .pagination a {
-  border: 2px solid gray;
   border-radius: 30px;
   padding: 10px;
   overflow: hidden;
@@ -100,4 +98,45 @@ input.search-query {
   border-left: none;
   padding-right: 16px;
   width: auto;
+}
+form#new_note {
+  width: 500px;
+  padding-left: 20px;
+  margin: 0px;
+  border: none;
+}
+#new_note label, #note_submit {
+  margin-top: 20px;
+}
+#note_title, #note_text {
+  margin: 0px;
+  clear: both;
+  display: block;
+  width: 100%;
+}
+#new_note input {
+  font-size: 20px;
+}
+#new_note textarea {
+  font-size: 18px;
+}
+#new_note label {
+  display: inline-block;
+  padding: 5px 10px 0px 10px;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: lightgray;
+  font-size: 20px;
+}
+#note_submit {
+  margin-left: -20px;
+  border-left: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+.action-new, #note_submit {
+  padding-left: 45px;
+  background: white url(star.png) 10px 10px no-repeat;
 }

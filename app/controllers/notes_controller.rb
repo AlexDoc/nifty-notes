@@ -3,6 +3,6 @@ class NotesController < ApplicationController
   end
 
   def new
-    @note = Note.build
+    @note = Note.new
   end
 end
