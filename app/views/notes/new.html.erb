@@ -1,4 +1,12 @@
 <%= form_for(@note) do |f| %>
+  <ol class="error-description">
+  <% f.object.errors.each do |field, error| %>
+    <li>
+      <a href="#<%= "#{f.object.class}_#{field}".underscore %>"><%= field.capitalize %></a>
+      <%= error %>
+    </li>
+  <% end %>
+  </ol>
   <%= f.label :title %>
   <%= f.text_field :title %>
   <%= f.label :text %>
