@@ -8,16 +8,24 @@ body, h1, h2, h3, h4, h5, h6, input {
 .search-row input, .app-title, .action-new, .search-row, .pagination a, label, input, textarea {
   border: 2px solid gray;
 }
+html, body {
+  height: 100%;
+}
 a {
   color: darkred;
 }
 .note-content, .search-row { clear: both; }
 .first-row, .second-row { overflow: hidden; }
 .sandbox {
-  border: 2px solid black;
+  background: url(backdrop.png) repeat-y;
+  border-top: none;
   width: 1024px;
-  height: 768px;
+  height: 200%;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .search-row input {
   font-size: 20px;
@@ -38,7 +46,7 @@ a {
   padding-right: 15px;
   position: absolute;
   top: 0px;
-  left: 0px;
+  left: 15px;
 }
 .note-preview {
   width: 240px;
@@ -66,11 +74,12 @@ a {
   background: url(/assets/text-eater.png) repeat-x;
 }
 .search-row {
+  width: 994px;
   border-left: none;
   border-right: none;
   padding: 16px 0 16px 0;
   margin-top: 30px;
-  background-color: lightgray;
+  background-color: #eeeeee;
 }
 input.search-button {
   padding-left: 45px;
@@ -100,10 +109,10 @@ input.search-query {
   width: auto;
 }
 form#new_note {
-  width: 500px;
   padding-left: 20px;
   margin: 0px;
   border: none;
+  width: 500px;
 }
 #new_note label, #note_submit {
   margin-top: 20px;
@@ -139,4 +148,16 @@ form#new_note {
 .action-new, #note_submit {
   padding-left: 45px;
   background: white url(star.png) 10px 10px no-repeat;
+}
+.field_with_errors input, .field_with_errors textarea {
+  border-color: darkred;
+}
+.error-description {
+  border: 2px solid #ff4444;
+  background: #ffeeee;
+  border-radius: 10px;
+  padding: 10px;
+}
+.error-description li {
+  margin-left: 20px;
 }

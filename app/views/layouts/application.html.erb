@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>NiftyNotes</title>
-  <%= stylesheet_link_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>NiftyNotes</title>
+    <%= stylesheet_link_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
 
-  <div class="sandbox">
-    <h1 class="app-title">Nifty <%= link_to "Notes", notes_path %></h1>
-    <%= yield %>
-  </div>
+    <div class="sandbox">
+      <h1 class="app-title">Nifty <%= link_to "Notes", notes_path %></h1>
+      <%= yield %>
+    </div>
 
-  <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag "application" %>
 
-</body>
+  </body>
 </html>
