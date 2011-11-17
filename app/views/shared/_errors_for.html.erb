@@ -1,0 +1,10 @@
+<% unless errors_for.errors.count.zero? %>
+  <ol class="error-description">
+    <% errors_for.errors.each do |field, error| %>
+      <li>
+        <a href="#<%= "#{errors_for.class}_#{field}".underscore %>"><%= field.capitalize %></a>
+        <%= error %>
+      </li>
+    <% end %>
+  </ol>
+<% end %>
