@@ -4,4 +4,5 @@
 en:
   hello: "Hello world"
   will_paginate:
-    previous_label: "Go back"
+    previous_label: "Go back!"
+    next_label: "Go forth!"

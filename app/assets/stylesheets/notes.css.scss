@@ -5,7 +5,7 @@ body, h1, h2, h3, h4, h5, h6, input {
   padding: 0;
   margin: 0;
 }
-.search-row input, .app-title, .action-new, .search-row, .pagination a, .previous_page, label, input, textarea {
+.search-row input, .app-title, .action-new, .search-row, .pagination *, label, input, textarea {
   border: 2px solid gray;
 }
 html, body {
@@ -13,8 +13,6 @@ html, body {
 }
 a {
   color: darkred;
-}
-h1 a, h2 a {
   text-decoration: none;
 }
 .note-content, .search-row { clear: both; }
@@ -95,21 +93,34 @@ input.search-query {
   width: 460px;
 }
 .pagination {
-  margin-top: 65px;
-  font-size: 20px;
+  margin-top: 30px;
+  font-size: 24px;
 }
-/*.pagination a,*/ .previous_page {
+.pagination *{
   border-radius: 30px;
-  padding: 10px;
+  padding: 5px;
   overflow: hidden;
-  background: lightgray;
+  background: #eee;
+  min-width: 30px;
+  display: inline-block;
+  text-align: center;
 }
-.previous_page {
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+.pagination em{
+  border-color: darkred;
+  color: darkred;
+  background-color: white;
+  font-style: normal;
+}
+.previous_page{
   border-left: none;
-  padding-right: 16px;
-  width: auto;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-left: 10px;
+  padding-right: 17px;
+}
+.next_page{
+  padding-left: 15px;
+  padding-right: 10px;
 }
 form#new_note {
   padding-left: 20px;
