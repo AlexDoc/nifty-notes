@@ -1,6 +1,6 @@
 class NotesController < ApplicationController
   def index
-    @notes = Note.page(params[:page])
+    @notes = Note.paginate(:page => params[:page], :per_page => 6)
   end
 
   def new
