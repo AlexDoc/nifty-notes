@@ -1,4 +1,4 @@
-<h2 class="action-new"><%= link_to 'New!', new_note_path %></h2>
+<h2 class="action-new"><%= link_to 'New!', new_note_path, :class => "fancybox" %></h2>
 <div class="first-row">
   <% @notes[0, 3].try(:each) do |note| %>
     <%= render :partial => 'note_preview', :object => note %>
