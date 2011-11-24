@@ -1,0 +1,8 @@
+<%= form_for(@note) do |f| %>
+  <%= render :partial => 'shared/errors_for', :object => f.object %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :text %>
+  <%= f.text_area :text %>
+  <%= f.submit "Create!", :id => "note_submit" %>
+<% end %>
