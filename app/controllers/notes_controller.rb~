@@ -18,7 +18,7 @@ class NotesController < ApplicationController
   def update
     @note = Note.find(params[:id])
 
-    if @note.update_attributes(params[:note])
+    if @note.update_attributes(params[:comment])
       redirect_to(note_path(@note), :notice => 'Note was successfully updated.')
     else
       render :action => "edit"
