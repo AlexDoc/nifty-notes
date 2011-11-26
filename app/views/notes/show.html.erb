@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+	 
+<h1> <%= @note.title %> </h1>
+
+<br />
+<%= @note.text %>
+
+<br />
+<%= link_to 'Edit', edit_note_path(@note) %>
+<%= link_to("Destroy", :method => :delete, :confirm => "Are you sure?") %>
+<%= link_to 'Back', notes_path %>
+<%= render 'comment' %>
+<%= render 'comments_form' %>

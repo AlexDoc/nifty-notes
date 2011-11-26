@@ -1,0 +1,4 @@
+<div id = 'comments'>
+  <hr />
+  <%= render :partial => "comment", :collection => @note.comments %>
+</div>

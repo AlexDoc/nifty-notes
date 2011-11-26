@@ -1,0 +1,12 @@
+<div id = 'comments'>
+  
+  <div>
+    <br /> 
+    <%= link_to("delete", comment_path(comment, { :note_id => @note.id }), :method => :delete) %> 
+  </div>
+  <div>
+    <%= comment.comment %>
+    <br />
+  </div>
+
+</div>

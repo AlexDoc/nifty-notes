@@ -1,4 +1,6 @@
 NiftyNotes::Application.routes.draw do
+  resources :comments
+
   root :to => "notes#index"
   resources :notes
 
